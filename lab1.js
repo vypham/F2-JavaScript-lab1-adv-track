@@ -8,10 +8,11 @@
  word TODO in comments.  Each TODO will have a description of what is
  required.
 
- Save this file wherever you like. To run it, navigate (in the terminal) to
- wherever you saved it, and type:
+ To run this file, type the following (in the terminal):
 
     node lab1.js
+
+ and then press enter/return.
 
  Instructions for turning this lab in are in the assignment description in
  Canvas.
