@@ -1,3 +1,5 @@
+'use strict';
+
 /* LAB 1: A Trip to Woodland Park Zoo
 
  Welcome to Lab 1 =)
@@ -17,8 +19,7 @@
  Instructions for turning this lab in are in the assignment description in
  Canvas.
 
- I'm happy to answer any questions on Slack or through the discussions in Canvas. I will post the
- questions I receive and the answers I give to a discussion group in Canvas.
+ I'm happy to answer any questions on Slack.
 
 */
 
@@ -28,7 +29,7 @@
 
 function assert(expression, failureMessage) {
   if (!expression) {
-    console.log("assertion failure: ", failureMessage);
+    console.log('assertion failure: ', failureMessage);
   }
 }
 
@@ -43,49 +44,56 @@ function assert(expression, failureMessage) {
 */
 
 assert(1 === 1);
-assert(1 === 2, "this is an assertion failure example. 1===2");
+assert(1 === 2, 'this is an assertion failure example. 1 === 2');
 
-/*
+/*------------------Assertions-------------------------------------------------
  TODO: 8 points
- Invoke assert twice. Use any boolean expressions that you like, but preferably
+ Invoke assert twice. (In other words, create two assertions like the ones above.)
+ Use any boolean expressions that you like, but preferably
  zoo-themed.  Make one pass and one fail. In the failure message, describe why
  it failed.
 */
+
+//your code goes here
 
 /* ----------------- Meerkats -------------------------------------------------
  Meerkats make a sort of chirping noise (according to my 30 seconds of
  research).  We're going to translate two sentences into meerkat speech.
 */
 
-var sentence1 = "More food please.",
-    sentence2 = "Come over here so you can scratch my belly.";
+var sentence1 = 'More food please.';
+var sentence2 = 'Come over here so you can scratch my belly.';
 
 /*
  TODO: 20 points
- Your goal is to replace the words in the above sentences with "chirp" The
+ Your goal is to replace the words in the above sentences with 'chirp' The
  assertions at the end of this section should pass when you're done.  Use
- **two** different kinds of loops to implement this.
- HINT: the "split" method on String will be useful.
+ **two** different kinds of loops to implement this. (10 points each.)
+ HINT: the 'split' method on String will be useful.
 */
 
-assert(sentence1 === "chirp chirp chirp.", "sentence 1 should have 3 chirps");
-assert(sentence2 === "chirp chirp chirp chirp chirp chirp chirp chirp chirp.",
-  "sentence 2 should have 9 chirps");
+//your code goes here
+
+assert(sentence1 === 'chirp chirp chirp.', 'sentence 1 should have 3 chirps');
+assert(sentence2 === 'chirp chirp chirp chirp chirp chirp chirp chirp chirp.',
+  'sentence 2 should have 9 chirps');
 
 /* ----------------- Favorite Animals ----------------------------------------
  The zoo is closing in 20 minutes. You still haven't seen your four favorite
  animals. You only have time for one. Use Math.random() to pick which animal
- to see next. http://www.w3schools.com/jsref/jsref_random.asp
- Hint: read the whole Math.random description on that page and try the examples
+ to see next.
+ Hint: read the Math.random description on MDN.
 */
 
-var favoriteAnimals = [ "elephant", "penguin", "eagle", "camel" ],
-    nextAnimal;
+var favoriteAnimals = ['elephant', 'penguin', 'eagle', 'camel'];
+var nextAnimal;
 
-// TODO: 10 points
+// TODO: 12 points
 // Assign one of your favorite animals to nextAnimal using Math.random() to pick
 
-assert(nextAnimal, "assign something to nextAnimal");
+// your code goes here
+
+assert(nextAnimal, 'assign something to nextAnimal');
 
 /* ----------------- Hungry Lion ----------------------------------------
  As long as the lion is well-fed, he doesn't take too much heed of the
@@ -98,8 +106,8 @@ assert(nextAnimal, "assign something to nextAnimal");
 */
 
 // number of times the new caretaker fed the lion. one array entry per day
-var mealsPerDay = [ 5, 4, 3, 6, 2, 4, 3, 4, 5, 1 ],
-    tooHungryDay;
+var mealsPerDay = [5, 4, 3, 6, 2, 4, 3, 4, 5, 1];
+var tooHungryDay;
 
 /*
  TODO: 20 points
@@ -110,8 +118,10 @@ var mealsPerDay = [ 5, 4, 3, 6, 2, 4, 3, 4, 5, 1 ],
  meals)
 */
 
-assert(tooHungryDay, "don't forget to assign the answer to tooHungryDay");
-assert(tooHungryDay < 10, "the lion is too hungry before the end of the array");
+// your code goes here
+
+assert(tooHungryDay, 'remember to assign the answer to tooHungryDay');
+assert(tooHungryDay < 10, 'the lion is too hungry before the end of the array');
 
 /* ----------------- Code Style ----------------------------------------
  TODO: 10 points
@@ -121,13 +131,9 @@ assert(tooHungryDay < 10, "the lion is too hungry before the end of the array");
  If you haven't already, run this command in the terminal (inside of this
  directory): npm install
 
- run the tools with:
-  ./node_modules/.bin/grunt jshint
-  ./node_modules/.bin/grunt jscs
-
-or, if you installed grunt globally, you can just type
-  $ grunt
-   and it will run both.
+ Now, type
+  grunt
+   and it will run both jshint and jscs on your code.
 
  Error and warning descriptions will be printed in the terminal.
  To get full points, correct all of the errors/warnings.
