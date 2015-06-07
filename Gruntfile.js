@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     jscs: {
       src: srcFiles,
       options: {
-        preset: "jquery",
+        preset: "airbnb",
         requireDotNotation: null,
         disallowMultipleVarDecl: null,
         requireMultipleVarDecl: null
