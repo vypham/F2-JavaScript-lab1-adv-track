@@ -1,6 +1,6 @@
 ### Lab 1, Advanced Track
 
-1. On GitHub, fork my <a href="https://github.com/stephanielingwood/lab1-adv-track">lab 1 repo</a> by clicking the "fork" button in the upper right.
+1. On GitHub, fork the <a href="https://github.com/codefellows/F2-JavaScript-lab1-adv-track">lab 1 repo</a> by clicking the "fork" button in the upper right.
 2. On your version of the repo, copy the "HTTPS clone url", midway down the right-hand side of your repo. It should be something like this: https://github.com/yourusernamehere/lab1-adv-track.git
 3. Open your terminal and navigate to your projects directory.
 4. Run this: `git clone thelinkyoujustcopiedgoeshere`
