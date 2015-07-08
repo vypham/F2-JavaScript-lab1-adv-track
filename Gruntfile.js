@@ -19,9 +19,9 @@ module.exports = function(grunt) {
       src: srcFiles,
       options: {
         preset: "airbnb",
-        requireDotNotation: null,
-        disallowMultipleVarDecl: null,
-        requireMultipleVarDecl: null
+        requireMultipleVarDecl: null,
+        validateQuoteMarks: true,
+        disallowMultipleVarDecl: true
       }
     }
   });
