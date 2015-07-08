@@ -18,10 +18,10 @@ module.exports = function(grunt) {
     jscs: {
       src: srcFiles,
       options: {
-        preset: "jquery",
-        requireDotNotation: null,
-        disallowMultipleVarDecl: null,
-        requireMultipleVarDecl: null
+        preset: "airbnb",
+        requireMultipleVarDecl: null,
+        validateQuoteMarks: true,
+        disallowMultipleVarDecl: true
       }
     }
   });
