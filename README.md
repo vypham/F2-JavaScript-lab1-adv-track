@@ -13,6 +13,13 @@ comments. Be sure to read everything. Run lab.js with `node lab1.js`.
 
 
 #### Resources and Collaborators
+<<<<<<< HEAD
 http://stackoverflow.com/questions/7979727/split-string-into-array http://stackoverflow.com/questions/4146927/implode-an-array-with-jquery-javascript
+=======
+http://stackoverflow.com/questions/7979727/split-string-into-array
+http://stackoverflow.com/questions/4146927/implode-an-array-with-jquery-javascript
+
+http://stackoverflow.com/questions/4959975/generate-random-value-between-two-numbers-in-javascript
+>>>>>>> 321d4cf45771a2bb2c98d567780294c4be4b4e8d
 
 http://stackoverflow.com/questions/4959975/generate-random-value-between-two-numbers-in-javascript
